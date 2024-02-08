@@ -27,3 +27,24 @@ f.write("this is a new line") #overwrites the entire file
 
 f = open("text.txt", "a")
 f.write("this is a new file") # adds to the file
+
+
+# with Sysntax 
+
+with open("text.txt", "r") as f:
+    data = f.read()
+    print(data)
+    
+with open("text.txt", "r") as f:
+    f.write("new data")
+    
+    
+# Deleting a File 
+
+# using the os module 
+
+# Module(like a code library) is a file written by another programmer that generlly has a function we can use.
+
+import os
+os.remove("text.txt")
+    
